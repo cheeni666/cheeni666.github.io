@@ -1,2 +1,2 @@
-# shreenibar.github.io
+# shreenibhar.github.io
 My homepage
