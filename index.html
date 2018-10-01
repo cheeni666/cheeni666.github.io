@@ -1,21 +1,234 @@
----
-layout: default
-title: About Me
----
-<div class="row">
-	<div class="col-md-4">
-		<div class="imgAbt">
-			<img class="img-responsive" src="myPic.jpg" />
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="icon" href="images/s.png">
+	<title>Shreenivas Bharadwaj V</title>
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="js/scroll.js"></script>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" style="color:grey;">Welcome |</a>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link js-scroll-trigger" href="#About">About</a>
+				<a class="nav-item nav-link js-scroll-trigger" href="#Skills">Skills</a>
+				<a class="nav-item nav-link js-scroll-trigger" href="#Experience">Experience</a>
+				<a class="nav-item nav-link js-scroll-trigger" href="#Projects">Projects</a>
+				<a class="nav-item nav-link js-scroll-trigger" href="#Research">Research</a>
+				<a class="nav-item nav-link js-scroll-trigger" href="#Publications">Publications</a>
+				<a class="nav-item nav-link js-scroll-trigger" href="#Resume">Resume</a>
+				<a class="nav-item nav-link js-scroll-trigger" href="#Hobbies">Hobbies</a>
+				<a class="nav-item nav-link js-scroll-trigger" href="#Contact">Contact</a>
+			</div>
+		</div>
+	</nav>
+	<img style="position:fixed; width:5vmax; height:3vmax; bottom:0; left:0;" src="images/d-arrow.png" />
+	<img style="position:fixed; width:5vmax; height:3vmax; bottom:0; right:0;" src="images/d-arrow.png" />
+
+	<div class="container" id="About" style="height:100vh; width: 100vw; padding-top:70px;">
+		<div class="row">
+			<div class="col-12">
+				<p style="font-size:3vmax; font-family:courier; text-align:center;">HI THERE, I AM SHREENIVAS!</p>
+				<p style="font-size:2vmax; font-family:courier; text-align:center;"><em>I ❤ TO BUILD.</em></p>
+				<div class="text-center">
+					<img class="rounded-circle" style="width:10vmax; height:10vmax;" src="images/cheeni.png" />
+				</div>
+				<p id="about_type" style="height: 20vmax; font-size:1vmax; font-family:'serif'; text-align:center; background-color:black; color:green; margin-top:2vmax; border-style:ridge; border-width: 1vmax 1vmax 2.5vmax 1vmax;"></p>
+			</div>
 		</div>
 	</div>
-	<div class="col-md-8">
-		<h1>Hey there, I am Shreenivas Bharadwaj!</h1>
-		<h3><em>An Incessant Learner and a Developer by heart.</em></h3>
-		<ul class="list-group">
-			<li class="list-group-item">An Android developer.</li>
-			<li class="list-group-item">A Web developer.</li>
-			<li class="list-group-item">A Machine Learning researcher and enthusiast.</li>
-		</ul>
-		<h5><span style="color: orange;">"If you can't fly, then run,<br>If you can't run, then walk,<br>If you can't walk, then crawl,<br>but whatever you do,<br>you have to keep moving forward"</span><br><span style="color: lightblue;">--Martin Luther King</span></h5>
+
+	<script>
+		var i = 0;
+		var txt = "Hello! My formal name is Shreenivas Bharadwaj Venkataramanan. I am a Masters student in the Computer Science department of University of California, San Diego. I finished my undergrad at National Institute of Technology, Trichy graduating with a BTech degree in Computer Science and Engineering. I indulge mostly in Machine Learning but some of my works have occasionally intersected with the fields of Natural Language Processing, Networks and High Performance Computing. I also have a good amount of experience in Web development and Android applications development. Two of my works have led to publications thanks to the amazing people I have worked with. I aspire to be a Software Engineer and a Machine Learning enthusiast who creates awesome products bringing forward development universally.";
+		var speed = 20;
+
+		function typeWriter() {
+			if (i < txt.length) {
+				document.getElementById("about_type").innerHTML = document.getElementById("about_type").innerHTML.slice(0, -1);
+				document.getElementById("about_type").innerHTML += txt.charAt(i);
+				if (txt.charAt(i) == "." && i != txt.length - 1) document.getElementById("about_type").innerHTML += "<br>";
+				document.getElementById("about_type").innerHTML += "|";
+				i++;
+				setTimeout(typeWriter, speed);
+			}
+		}
+
+		typeWriter();
+	</script>
+
+	<div class="container" id="Skills" style="height:100vh; width: 100vw; padding-top:70px;">
+		<div class="row">
+			<div class="col-12">
+				<p style="font-size:3vmax; font-family:courier; text-align:center;">What I do</p>
+				<div class="text-center">
+					<img class="rounded" style="width:10vmax; height:10vmax;" src="images/coding.png" />
+				</div>
+				<p style="font-size:2vmax; font-family:courier; text-align:center;"><em>Develop.</em></p>
+				<p style="font-size:1vmax; font-family:courier; text-align:center;">Programming Languages and Tools:<br><span style="color:red;">C/C++, Python, Java, Matlab</span><br><span style="color:green;">HTML, CSS, JavaScript<br>Bash, SQL, Git</span></p>
+				<p style="font-size:1vmax; font-family:courier; text-align:center;">Frameworks:<br><span style="color:blue;">AndroidStudio, Tensorflow, Pytorch<br>Jquery, Flask, CUDA/cuBLAS/Thrust</span></p>
+			</div>
+		</div>
 	</div>
-</div>
+
+	<div class="container" id="Experience" style="height:100vh; width: 100vw; padding-top:70px;">
+		<div class="row">
+			<div class="col-12">
+				<p style="font-size:3vmax; font-family:courier; text-align:center;">Places I have worked or interned at:</p>
+				<div class="row">
+					<div class="col">
+						<img class="rounded" style="width:15vmax; height:15vmax; padding:1vmax;" src="images/amazon.png" />
+					</div>
+					<div class="col">
+						<img class="rounded" style="width:15vmax; height:15vmax; padding:1vmax;" src="images/ucsd.png" />
+					</div>
+					<div class="col">
+						<img class="rounded" style="width:15vmax; height:15vmax; padding:1vmax;" src="images/iitd.png" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<img class="rounded" style="width:15vmax; height:15vmax; padding:1vmax;" src="images/iiith.png" />
+					</div>
+					<div class="col">
+						<img class="rounded" style="width:15vmax; height:15vmax; padding:1vmax;" src="images/nitt.png" />
+					</div>
+					<div class="col">
+						<img class="rounded" style="width:15vmax; height:15vmax; padding:1vmax;" src="images/delta.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="Projects" style="height:100vh; width: 100vw; padding-top:70px; background-color:#404040;">
+		<p style="font-size:3vmax; font-family:courier; text-align:center; color:darkgrey;">Projects <img class="rounded" style="width:3vmax; height:3vmax;" src="images/project.png" /></p>
+		<p style="font-size:1.5vmax; font-family:courier; color:darkgrey;"><em>Amazon</em></p>
+		<p style="font-size:1vmax; font-family:courier; color:darkgrey;"><em>Software Development Intern | May’17-July’17 | Chennai, India</em></p>
+		<p style="font-size:1vmax; font-family:courier; color:darkgrey; text-indent:2vmax;">Designed and deployed an internal tool page service in the Kindle Digital Commerce Platform using Coral framework. Executed Amazon’s development process, codereviews, wrote high coverage unit tests, used Amazon’s build/test/integrationtools.</p>
+		<p style="font-size:1.5vmax; font-family:courier; color:darkgrey;"><em>Delta</em></p>
+		<p style="font-size:1vmax; font-family:courier; color:darkgrey;"><em>University Development Club Member | 2015-18 | Trichy, India</em></p>
+		<p style="font-size:1vmax; font-family:courier; color:darkgrey; text-indent:2vmax;">Developed inventory management site with Flask and MySQL database. Collaborated and created a campus communication application in android (PHP backend). Devised AI for Tic-Tac-Toe, Chess and built game in android for hackathons.</p>
+		<p style="font-size:1.5vmax; font-family:courier; color:darkgrey;"><em>NIT, Trichy</em></p>
+		<p style="font-size:1vmax; font-family:courier; color:darkgrey;"><em>Final Year Thesis | Jan’18-April’18 | Trichy, India</em></p>
+		<p style="font-size:1vmax; font-family:courier; color:darkgrey; text-indent:2vmax;">Defeated the current champion bot in GIPF. Analyzed various strategies (Monte Carlo Tree Search, Negascout).</p>
+		<p style="font-size:1.5vmax; font-family:courier; color:darkgrey;"><em>Vortex Symposium</em></p>
+		<p style="font-size:1vmax; font-family:courier; color:darkgrey;"><em>Presentation | Jan’17-May’17 | Trichy, India</em></p>
+		<p style="font-size:1vmax; font-family:courier; color:darkgrey; text-indent:2vmax;">Improved accuracy by 10% in the IRMAS dataset. Used LSTM neural networks with Mel Cepstral features. Music created by generating Spectrograms using Deep Convolutional GAN.</p>
+	</div>
+
+	<div class="container" id="Research" style="height:100vh; width: 100vw; padding-top:70px;">
+		<div class="jumbotron">
+			<p style="font-size:3vmax; font-family:courier; text-align:center;">Research <img class="rounded" style="width:3vmax; height:3vmax;" src="images/research.png" /></p>
+			<p style="font-size:1.5vmax; font-family:courier;"><em>Acceleration of Vector Auto Regression with GPUs</em></p>
+			<p style="font-size:1vmax; font-family:courier;"><em>Research Intern | July’17-Dec’17 | Indian Institute of Technology, Delhi</em></p>
+			<p style="font-size:1vmax; font-family:courier; text-indent:2vmax;">Achieved 650x speedup over the regular CPU code. Computed tight bound solutions for Lasso regression models.</p>
+			<p style="font-size:1.5vmax; font-family:courier;"><em>MAC Layer Optimization, Dynamic Learning</em></p>
+			<p style="font-size:1vmax; font-family:courier;"><em>Course Research | July'16-Dec'16 | National Institute of Technology, Trichy</em></p>
+			<p style="font-size:1vmax; font-family:courier; text-indent:2vmax;">Increased throughput by 3% (10Kbps)approx. at max traffic (80 stations). Optimized the MAC 802.11 wireless network Contention Window mechanism. Published in IJDIWC journal.</p>
+			<p style="font-size:1.5vmax; font-family:courier;"><em>Named Entity Recognition</em></p>
+			<p style="font-size:1vmax; font-family:courier;"><em>Research Intern | May’16-July’16 | IIIT, Hyderabad</em></p>
+			<p style="font-size:1vmax; font-family:courier; text-indent:2vmax;">Improved accuracy by 15% in the Named Entity Recognition task for Hindi. Achieved 90% accuracy in the English task. Published in the proceedings of ICON-2016 conference indexed in ACL.</p>
+		</div>
+	</div>
+
+	<div class="container" id="Publications" style="height:100vh; width: 100vw; padding-top:70px;">
+		<p style="font-size:3vmax; font-family:courier; text-align:center;">Publications <img class="rounded" style="width:3vmax; height:3vmax;" src="images/paper.png" /></p>
+		<table class="table">
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>Balasubramanian, N., Venkataramanan, S.B. and Aathma, A., 2017. Dynamic Optimization of IEEE 802.11 DCF based on Active Stations and Collision Probability. International Journal of Digital Information and Wireless Communications, 7(2), pp.66-75.</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Athavale, V., Bharadwaj, S., Pamecha, M., Prabhu, A. and Shrivastava, M., 2016. Towards deep learning in hindi ner: An approach to tackle the labelled data scarcity. arXiv preprint arXiv:1610.09756.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="container" id="Resume" style="height:100vh; width: 100vw; padding-top:70px; background-color:#404040;">
+		<p style="font-size:3vmax; font-family:courier; text-align:center; color:white;">Are you interested?</p>
+		<p style="font-size:3vmax; font-family:courier; text-align:center; color:white;">Here is my resume</p>
+		<div class="text-center">
+			<button type="button" class="btn btn-outline-warning btn-lg" style="width:20vmax; height:8vmax;"><p style="font-size:3vmax; font-family:courier; text-align:center;">Resume <img class="rounded" style="width:3vmax; height:3vmax;" src="images/resume.png" /></p></button>		
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			$('.btn').click(function() {
+				window.location = "pdfs/resume.pdf";
+			});
+		});
+	</script>
+
+	<div class="container" id="Hobbies" style="height:100vh; width: 100vw; padding-top:70px;">
+		<div class="row">
+			<div class="col-12">
+				<p style="font-size:3vmax; font-family:courier; text-align:center;">When I am free, I do:</p>
+				<div class="row">
+					<div class="col">
+						<img class="rounded" style="width:15vmax; height:15vmax; padding:1vmax;" src="images/tt.png" />
+					</div>
+					<div class="col">
+						<img class="rounded" style="width:15vmax; height:15vmax; padding:1vmax;" src="images/draw.png" />
+					</div>
+					<div class="col">
+						<img class="rounded" style="width:15vmax; height:15vmax; padding:1vmax;" src="images/gym.png" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<img class="rounded" style="width:15vmax; height:15vmax; padding:1vmax;" src="images/novel.png" />
+					</div>
+					<div class="col">
+						<img class="rounded" style="width:15vmax; height:15vmax; padding:1vmax;" src="images/eat.png" />
+					</div>
+					<div class="col">
+						<img class="rounded" style="width:15vmax; height:15vmax; padding:1vmax;" src="images/music.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="Contact" class="page-footer font-small blue pt-4" style="background-color:black;">
+		<div class="container-fluid text-center">
+			<p style="font-size:3vw; font-family:courier; color:white;">Contact Me</p>
+			<p style="font-size:1.5vw; font-family:courier; color:white;">
+				<img class="rounded" style="width:1.5vw; height:1.5vw;" src="images/gmail.png" />
+				<a href="mailto:sbvenkat@ucsd.edu"> Email </a>
+				<img class="rounded" style="width:1.5vw; height:1.5vw;" src="images/phone.png" />
+				<a href="#Contact"> +1 858.366.2933 </a>
+				<img class="rounded" style="width:1.5vw; height:1.5vw;" src="images/linkedin.png" />
+				<a href="https://www.linkedin.com/in/shreenibhar/"> Linkedin </a>
+				<img class="rounded" style="width:1.5vw; height:1.5vw;" src="images/facebook.png" />
+				<a href="https://www.facebook.com/ShreenivasBharadwajV"> Facebook </a>
+				<img class="rounded" style="width:1.5vw; height:1.5vw;" src="images/github.png" />
+				<a href="https://github.com/shreenibhar"> Github </a>
+				<img class="rounded" style="width:1.5vw; height:1.5vw;" src="images/gscholar.png" />
+				<a href="https://scholar.google.com/citations?user=X8hMQFEAAAAJ&hl=en"> GScholar </a>
+			</p>
+		</div>
+		<div class="footer-copyright text-center">
+			2018 Shreenivas Bharadwaj V
+		</div>
+		<div class="footer-copyright text-center">
+			Made with HTML, CSS, Bootsrap, Javascript, Jquery and lots of ❤
+		</div>
+  </footer>
+
+</body>
+</html>
