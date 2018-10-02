@@ -64,25 +64,28 @@
 			var i = 0;
 			typeWriter();
 		}
-		typeStart('HI THERE, I AM SHREENIVAS!', 'about_1', 50);
-		setTimeout('typeStart("I ❤ TO BUILD.", "about_2", 50)', 1500);
+
+		$(document).ready(function(){
+			typeStart('HI THERE, I AM SHREENIVAS!', 'about_1', 50);
+			setTimeout('typeStart("I ❤ TO BUILD.", "about_2", 50)', 1500);
+		});
 	</script>
 
 	<div class="container" id="Summary" style="height:100vh; width: 100vw; padding-top:70px; background-image:url('images/stars.gif'); background-size:cover;">
 		<p style="font-size:4vh; font-family:courier; text-align:center; color:white;">Summary</p>
 		<div style="color:white; padding:1vw; font-style:italic;">
-			<p style="font-size:2vh; font-family:courier;">Hello! My formal name is Shreenivas Bharadwaj Venkataramanan.</p>
+			<p style="font-size:2vh; font-family:courier;">My full name is Shreenivas Bharadwaj Venkataramanan.</p>
 			<p style="font-size:2vh; font-family:courier;">I am a Masters student in the CS department of UC San Diego.</p>
 			<p style="font-size:2vh; font-family:courier;">I finished my undergrad at NIT, Trichy graduating with a BTech degree in CSE.</p>
-			<p style="font-size:2vh; font-family:courier;">I indulge mostly in Machine Learning but some of my works have occasionally intersected with the fields of Natural Language Processing, Networks and High Performance Computing.</p>
+			<p style="font-size:2vh; font-family:courier;">I indulge mostly in Machine Learning. Some of my works have occasionally intersected with the fields of Natural Language Processing, Networks and High Performance Computing.</p>
 			<p style="font-size:2vh; font-family:courier;">I also have a good amount of experience in Web development and Android applications development.</p>
-			<p style="font-size:2vh; font-family:courier;">I aspire to be a Software Engineer and a Machine Learning enthusiast who creates awesome products bringing forward development universally.</p>
+			<p style="font-size:2vh; font-family:courier;">I aspire to be a Software Engineer and a Machine Learning enthusiast who works on solving real world problems bringing forward development universally.</p>
 		</div>
 	</div>
 
 	<div class="container" id="Skills" style="height:100vh; width: 100vw; padding-top:70px; display:flex;">
 		<div style="margin:auto;">
-			<p style="font-size:5vh; font-family:courier; text-align:center;">What I do</p>
+			<p style="font-size:4vh; font-family:courier; text-align:center;">What I do</p>
 			<div class="text-center">
 				<img class="rounded" style="width:15vh; height:15vh;" src="images/coding.png" />
 			</div>
@@ -93,72 +96,68 @@
 		</div>
 	</div>
 
-	<div class="container" id="Experience" style="height:100vh; width: 100vw; padding-top:70px; display:flex;">
-		<div style="margin:auto;">
-			<p style="font-size:5vmin; font-family:courier; text-align:center;">Places I have worked or interned at:</p>
-			<div class="row">
-				<div class="col">
-					<img class="rounded" style="width:25vmin; height:25vmin; padding:1vmin;" src="images/amazon.png" />
-				</div>
-				<div class="col">
-					<img class="rounded" style="width:25vmin; height:25vmin; padding:1vmin;" src="images/ucsd.png" />
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<img class="rounded" style="width:25vmin; height:25vmin; padding:1vmin;" src="images/iitd.png" />
-				</div>
-				<div class="col">
-					<img class="rounded" style="width:25vmin; height:25vmin; padding:1vmin;" src="images/iiith.png" />
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<img class="rounded" style="width:25vmin; height:25vmin; padding:1vmin;" src="images/nitt.png" />
-				</div>
-				<div class="col">
-					<img class="rounded" style="width:25vmin; height:25vmin; padding:1vmin;" src="images/delta.png" />
-				</div>
-			</div>
+	<div class="container" id="Experience" style="height:100vh; width: 100vw; padding-top:70px;">
+		<p style="font-size:5vmin; font-family:courier; text-align:center;">Places I have worked or interned at:</p>
+		<div style="display:flex; flex-wrap:wrap; flex-direction:row; justify-content:center;">
+			<img class="rounded" style="width:30vmin; height:30vmin; padding:1vmin;" src="images/amazon.png" />
+			<img class="rounded" style="width:30vmin; height:30vmin; padding:1vmin;" src="images/ucsd.png" />
+			<img class="rounded" style="width:30vmin; height:30vmin; padding:1vmin;" src="images/iitd.png" />
+			<img class="rounded" style="width:30vmin; height:30vmin; padding:1vmin;" src="images/iiith.png" />
+			<img class="rounded" style="width:30vmin; height:30vmin; padding:1vmin;" src="images/nitt.png" />
+			<img class="rounded" style="width:30vmin; height:30vmin; padding:1vmin;" src="images/delta.png" />
 		</div>
 	</div>
 
 	<div class="container" id="Projects" style="height:100vh; width: 100vw; padding-top:70px;">
-		<div class="jumbotron">
-		<p style="font-size:3vmax; font-family:courier; text-align:center; color:darkgrey;">Projects <img class="rounded" style="width:3vmax; height:3vmax;" src="images/project.png" /></p>
-		<p style="font-size:1.5vmax; font-family:courier;"><em>Amazon</em></p>
-		<p style="font-size:1vmax; font-family:courier;"><em>Software Development Intern | May’17-July’17 | Chennai, India</em></p>
-		<p style="font-size:1vmax; font-family:courier; text-indent:2vmax;">Designed and deployed an internal tool page service in the Kindle Digital Commerce Platform using Coral framework. Executed Amazon’s development process, codereviews, wrote high coverage unit tests, used Amazon’s build/test/integrationtools.</p>
-		<p style="font-size:1.5vmax; font-family:courier;"><em>Delta</em></p>
-		<p style="font-size:1vmax; font-family:courier;"><em>University Development Club Member | 2015-18 | Trichy, India</em></p>
-		<p style="font-size:1vmax; font-family:courier; text-indent:2vmax;">Developed inventory management site with Flask and MySQL database. Collaborated and created a campus communication application in android (PHP backend). Devised AI for Tic-Tac-Toe, Chess and built game in android for hackathons.</p>
-		<p style="font-size:1.5vmax; font-family:courier;"><em>NIT, Trichy</em></p>
-		<p style="font-size:1vmax; font-family:courier;"><em>Final Year Thesis | Jan’18-April’18 | Trichy, India</em></p>
-		<p style="font-size:1vmax; font-family:courier; text-indent:2vmax;">Defeated the current champion bot in GIPF. Analyzed various strategies (Monte Carlo Tree Search, Negascout).</p>
-		<p style="font-size:1.5vmax; font-family:courier;"><em>Vortex Symposium</em></p>
-		<p style="font-size:1vmax; font-family:courier;"><em>Presentation | Jan’17-May’17 | Trichy, India</em></p>
-		<p style="font-size:1vmax; font-family:courier; text-indent:2vmax;">Improved accuracy by 10% in the IRMAS dataset. Used LSTM neural networks with Mel Cepstral features. Music created by generating Spectrograms using Deep Convolutional GAN.</p>
+		<div class="jumbotron" style="font-family:courier;">
+			<p style="font-size:4vh; text-align:center; color:darkgrey;">Projects <img class="rounded" style="width:4vh; height:4vh;" src="images/project.png" /></p>
+			<div style="font-size:2vh;">
+				<b>Game Strategies for the GIPF game</b><br>
+				<em>Final year thesis | Jan’18-April’18 | NIT Trichy, India</em><br>
+				Defeated the current champion bot in GIPF. Analyzed various strategies (Monte Carlo Tree Search, Negascout).
+			</div>
+			<div style="font-size:2vh;">
+				<b>Software Development Intern project</b><br>
+				<em>Amazon | May’17-July’17 | Chennai, India</em><br>
+				Designed and deployed an internal tool page service in the Kindle Digital Commerce Platform using Coral framework. Executed Amazon’s development process, codereviews, wrote high coverage unit tests, used Amazon’s build/test/integration tools.
+			</div>
+			<div style="font-size:2vh;">
+				<b>Club projects</b><br>
+				<em>Delta | 2015-18 | NIT Trichy, India</em><br>
+				Developed inventory management site with Flask and MySQL database. Collaborated and created a campus communication application in android (PHP backend). Devised AI for Tic-Tac-Toe, Chess and built game in android for hackathons.
+			</div>
+			<div style="font-size:2vh;">
+				<b>Music Recogniton and Generation</b><br>
+				<em>Vortex Symposium | Jan’17-May’17 | NIT Trichy, India</em><br>
+				Improved accuracy by 10% in the IRMAS dataset. Used LSTM neural networks with Mel Cepstral features. Music created by generating Spectrograms using Deep Convolutional GAN.
+			</div>
 		</div>
 	</div>
 
 	<div class="container" id="Research" style="height:100vh; width: 100vw; padding-top:70px;">
-		<div class="jumbotron">
-			<p style="font-size:3vmax; font-family:courier; text-align:center;">Research <img class="rounded" style="width:3vmax; height:2vmax;" src="images/research.png" /></p>
-			<p style="font-size:1.5vmax; font-family:courier;"><em>Acceleration of Vector Auto Regression with GPUs</em></p>
-			<p style="font-size:1vmax; font-family:courier;"><em>Research Intern | July’17-Dec’17 | Indian Institute of Technology, Delhi</em></p>
-			<p style="font-size:1vmax; font-family:courier; text-indent:2vmax;">Achieved 650x speedup over the regular CPU code. Computed tight bound solutions for Lasso regression models.</p>
-			<p style="font-size:1.5vmax; font-family:courier;"><em>MAC Layer Optimization, Dynamic Learning</em></p>
-			<p style="font-size:1vmax; font-family:courier;"><em>Course Research | July'16-Dec'16 | National Institute of Technology, Trichy</em></p>
-			<p style="font-size:1vmax; font-family:courier; text-indent:2vmax;">Increased throughput by 3% (10Kbps)approx. at max traffic (80 stations). Optimized the MAC 802.11 wireless network Contention Window mechanism. Published in IJDIWC journal.</p>
-			<p style="font-size:1.5vmax; font-family:courier;"><em>Named Entity Recognition</em></p>
-			<p style="font-size:1vmax; font-family:courier;"><em>Research Intern | May’16-July’16 | IIIT, Hyderabad</em></p>
-			<p style="font-size:1vmax; font-family:courier; text-indent:2vmax;">Improved accuracy by 15% in the Named Entity Recognition task for Hindi. Achieved 90% accuracy in the English task. Published in the proceedings of ICON-2016 conference indexed in ACL.</p>
+		<div class="jumbotron" style="font-family:courier;">
+			<p style="font-size:4vh; text-align:center; color:darkgrey;">Research <img class="rounded" style="width:4vh; height:3vh;" src="images/research.png" /></p>
+			<div style="font-size:2vh;">
+				<b>Acceleration of Vector Auto Regression with GPUs</b><br>
+				<em>Research Intern | July’17-Dec’17 | Indian Institute of Technology, Delhi</em><br>
+				Achieved 650x speedup over the regular CPU code. Computed tight bound solutions for Lasso regression models.
+			</div>
+			<div style="font-size:2vh;">
+				<b>MAC Layer Optimization, Dynamic Learning</b><br>
+				<em>Course Research | July'16-Dec'16 | National Institute of Technology, Trichy</em><br>
+				Increased throughput by 3% (10Kbps)approx. at max traffic (80 stations). Optimized the MAC 802.11 wireless network Contention Window mechanism. Published in IJDIWC journal.
+			</div>
+			<div style="font-size:2vh;">
+				<b>Named Entity Recognition</b><br>
+				<em>Research Intern | May’16-July’16 | IIIT, Hyderabad</em><br>
+				Improved accuracy by 15% in the Named Entity Recognition task for Hindi. Achieved 90% accuracy in the English task. Published in the proceedings of ICON-2016 conference indexed in ACL.
+			</div>
 		</div>
 	</div>
 
 	<div class="container" id="Publications" style="height:100vh; width: 100vw; padding-top:70px;">
-		<p style="font-size:3vmax; font-family:courier; text-align:center;">Publications <img class="rounded" style="width:3vmax; height:3vmax;" src="images/paper.png" /></p>
-		<table class="table">
+		<p style="font-size:4vh; font-family:courier; text-align:center;">Publications <img class="rounded" style="width:4vh; height:4vh;" src="images/paper.png" /></p>
+		<table class="table" style="font-size:2vh;">
 			<tbody>
 				<tr>
 					<th scope="row">1</th>
@@ -172,11 +171,13 @@
 		</table>
 	</div>
 
-	<div class="container" id="Resume" style="height:100vh; width: 100vw; padding-top:70px; background-color:#404040;">
-		<p style="font-size:3vmax; font-family:courier; text-align:center; color:white;">Are you interested?</p>
-		<p style="font-size:3vmax; font-family:courier; text-align:center; color:white;">Here is my resume</p>
-		<div class="text-center">
-			<button type="button" class="btn btn-outline-warning btn-lg" style="width:20vmax; height:8vmax;"><p style="font-size:3vmax; font-family:courier; text-align:center;">Resume <img class="rounded" style="width:3vmax; height:3vmax;" src="images/resume.png" /></p></button>		
+	<div class="container" id="Resume" style="height:100vh; width: 100vw; padding-top:70px; background-color:#404040; display:flex;">
+		<div style="margin:auto;">
+			<p style="font-size:3vmax; font-family:courier; text-align:center; color:white;">Are you interested?</p>
+			<p style="font-size:3vmax; font-family:courier; text-align:center; color:white;">Here is my resume</p>
+			<div class="text-center">
+				<button type="button" class="btn btn-outline-warning btn-lg" style="width:20vmax; height:8vmax;"><p style="font-size:3vmax; font-family:courier; text-align:center;">Resume <img class="rounded" style="width:3vmax; height:3vmax;" src="images/resume.png" /></p></button>
+			</div>
 		</div>
 	</div>
 
@@ -185,53 +186,45 @@
 			$('.btn').click(function() {
 				window.location = "pdfs/resume.pdf";
 			});
+			$('[data-toggle="tooltip"]').tooltip()
 		});
 	</script>
 
-	<div class="container" id="Hobbies" style="height:100vh; width: 100vw; padding-top:70px; display:flex;">
-		<div style="margin:auto;">
-			<p style="font-size:5vmin; font-family:courier; text-align:center;">When I am free, I do:</p>
-			<div class="row">
-				<div class="col">
-					<img class="rounded" style="width:25vmin; height:25vmin; padding:1vmin;" src="images/tt.png" />
-				</div>
-				<div class="col">
-					<img class="rounded" style="width:25vmin; height:25vmin; padding:1vmin;" src="images/draw.png" />
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<img class="rounded" style="width:25vmin; height:25vmin; padding:1vmin;" src="images/gym.png" />
-				</div>
-				<div class="col">
-					<img class="rounded" style="width:25vmin; height:25vmin; padding:1vmin;" src="images/novel.png" />
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<img class="rounded" style="width:25vmin; height:25vmin; padding:1vmin;" src="images/eat.png" />
-				</div>
-				<div class="col">
-					<img class="rounded" style="width:25vmin; height:25vmin; padding:1vmin;" src="images/music.png" />
-				</div>
-			</div>
+	<div class="container" id="Hobbies" style="height:100vh; width: 100vw; padding-top:70px;">
+		<p style="font-size:5vmin; font-family:courier; text-align:center;">When I am free, I usually:</p>
+		<div style="display:flex; flex-wrap:wrap; flex-direction:row; justify-content:center;">
+			<img class="rounded" style="width:30vmin; height:30vmin; padding:1vmin;" src="images/tt.png" />
+			<img class="rounded" style="width:30vmin; height:30vmin; padding:1vmin;" src="images/gym.png" />
+			<img class="rounded" style="width:30vmin; height:30vmin; padding:1vmin;" src="images/music.png" />
+			<img class="rounded" style="width:30vmin; height:30vmin; padding:1vmin;" src="images/draw.png" />
+			<img class="rounded" style="width:30vmin; height:30vmin; padding:1vmin;" src="images/novel.png" />
+			<img class="rounded" style="width:30vmin; height:30vmin; padding:1vmin;" src="images/eat.png" />
 		</div>
 	</div>
 
 	<footer id="Contact" class="page-footer" style="background-color:black;">
 		<div class="container-fluid text-center">
-			<p style="font-size:4vh; font-family:courier;">Connect with Me</p>
-			<div style="color:white;">
-				<i class="fas fa-envelope" style="margin:1vmin;"><a href="mailto:sbvenkat@ucsd.edu"> email</a></i>
-				<i class="fas fa-mobile-alt" style="margin:1vmin;"><a href="#Contact"> 858.366.2933</a></i>
-				<i class="fab fa-linkedin-in" style="margin:1vmin;"><a href="https://www.linkedin.com/in/shreenibhar/"> linkedin</a></i>
-				<i class="fab fa-facebook-f" style="margin:1vmin;"><a href="https://www.facebook.com/ShreenivasBharadwajV"> facebook</a></i>
-				<i class="fab fa-github" style="margin:1vmin;"><a href="https://github.com/shreenibhar"> github</a></i>
-				<i class="fab fa-google" style="margin:1vmin;"><a href="https://scholar.google.com/citations?user=X8hMQFEAAAAJ&hl=en"> gscholar</a></i>
+			<p style="font-size:5vmin; font-family:courier; color:grey;">Connect with Me</p>
+			<div style="color:white; font-size:5vmin;">
+				<a href="mailto:sbvenkat@ucsd.edu">
+					<i class="fas fa-envelope fa-2x" style="margin:2vmin;" data-toggle="tooltip" data-placement="bottom" title="Email"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/shreenibhar/">
+					<i class="fab fa-linkedin-in fa-2x" style="margin:2vmin;" data-toggle="tooltip" data-placement="bottom" title="Linkedin"></i>
+				</a>
+				<a href="https://www.facebook.com/ShreenivasBharadwajV">
+					<i class="fab fa-facebook-f fa-2x" style="margin:2vmin;" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i>
+				</a>
+				<a href="https://github.com/shreenibhar">
+					<i class="fab fa-github fa-2x" style="margin:2vmin;" data-toggle="tooltip" data-placement="bottom" title="Github"></i>
+				</a>
+				<a href="https://scholar.google.com/citations?user=X8hMQFEAAAAJ&hl=en">
+					<i class="fab fa-google fa-2x" style="margin:2vmin;" data-toggle="tooltip" data-placement="bottom" title="Google Scholar"></i>
+				</a>
 			</div>
 		</div>
 		<div class="footer-copyright text-center">
-			2018 Shreenivas Bharadwaj V
+			2018, Shreenivas Bharadwaj V
 		</div>
 		<div class="footer-copyright text-center">
 			Made with HTML, CSS, Bootsrap, Javascript, Jquery, Font Awesome and lots of ❤
