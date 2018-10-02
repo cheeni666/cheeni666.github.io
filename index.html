@@ -37,7 +37,7 @@
 	<img style="position:fixed; width:5vw; height:3vw; bottom:0; left:0;" src="images/d-arrow.png" />
 	<img style="position:fixed; width:5vw; height:3vw; bottom:0; right:0;" src="images/d-arrow.png" />
 
-	<div class="container" id="About" style="height:100vh; width: 100vw; padding-top:70px; display:flex;">
+	<div class="container" id="About" style="height:100vh; padding-top:70px; display:flex;">
 		<div style="margin:auto;">
 			<p id="about_1" style="font-size:3vmax; font-family:courier; text-align:center;"></p>
 			<p id="about_2" style="font-size:2vmax; font-family:courier; text-align:center; font-style:italic;"></p>
@@ -71,8 +71,8 @@
 		});
 	</script>
 
-	<div class="container" id="Summary" style="height:100vh; width: 100vw; padding-top:70px; background-image:url('images/stars.gif'); background-size:cover;">
-		<p style="font-size:4vh; font-family:courier; text-align:center; color:white;">Summary</p>
+	<div class="container-fluid" id="Summary" style="height:100vh; padding-top:70px; background-image:url('images/stars.gif'); background-size:cover; display:flex; flex-wrap:nowrap; flex-direction:column; justify-content:center;">
+		<p style="font-size:4vh; font-family:courier; text-align:center; color:white; ">Summary</p>
 		<div style="color:white; padding:1vw; font-style:italic;">
 			<p style="font-size:2vh; font-family:courier;">My full name is Shreenivas Bharadwaj Venkataramanan.</p>
 			<p style="font-size:2vh; font-family:courier;">I am a Masters student in the CS department of UC San Diego.</p>
@@ -83,20 +83,20 @@
 		</div>
 	</div>
 
-	<div class="container" id="Skills" style="height:100vh; width: 100vw; padding-top:70px; display:flex;">
+	<div class="container-fluid" id="Skills" style="height:100vh; padding-top:70px; display:flex; background-color:lightgrey;">
 		<div style="margin:auto;">
 			<p style="font-size:4vh; font-family:courier; text-align:center;">What I do</p>
 			<div class="text-center">
 				<img class="rounded" style="width:15vh; height:15vh;" src="images/coding.png" />
 			</div>
 			<p style="font-size:3vh; font-family:courier; text-align:center;"><em>Develop.</em></p>
-			<p style="font-size:2vh; font-family:courier; text-align:center;">Programming Languages and Tools:<br><span style="color:red;">C/C++, Python, Java, Matlab</span><br><span style="color:green;">HTML, CSS, JavaScript<br>Bash, SQL, Git</span></p>
-			<p style="font-size:2vh; font-family:courier; text-align:center;">Frameworks:<br><span style="color:blue;">AndroidStudio, Tensorflow, Pytorch<br>Jquery, Flask, CUDA/cuBLAS/Thrust</span></p>
+			<p style="font-size:2vh; font-family:courier; text-align:center;"><b>Programming Languages and Tools:</b><br><span style="color:red;">C/C++, Python, Java, Matlab</span><br><span style="color:green;">HTML, CSS, JavaScript<br>Bash, SQL, Git</span></p>
+			<p style="font-size:2vh; font-family:courier; text-align:center;"><b>Frameworks:</b><br><span style="color:blue;">AndroidStudio, Tensorflow, Pytorch<br>Jquery, Flask, CUDA/cuBLAS/Thrust</span></p>
 			</div>
 		</div>
 	</div>
 
-	<div class="container" id="Experience" style="height:100vh; width: 100vw; padding-top:70px;">
+	<div class="container-fluid" id="Experience" style="height:100vh; padding-top:70px; display:flex; flex-wrap:nowrap; flex-direction:column; justify-content:center;">
 		<p style="font-size:5vmin; font-family:courier; text-align:center;">Places I have worked or interned at:</p>
 		<div style="display:flex; flex-wrap:wrap; flex-direction:row; justify-content:center;">
 			<img class="rounded" style="width:30vmin; height:30vmin; padding:1vmin;" src="images/amazon.png" />
@@ -108,8 +108,8 @@
 		</div>
 	</div>
 
-	<div class="container" id="Projects" style="padding-top:70px;">
-		<div class="jumbotron" style="font-family:courier;">
+	<div class="container-fluid" id="Projects" style="padding-top:70px; display:flex; flex-wrap:wrap; flex-direction:row; justify-content:center;">
+		<div class="jumbotron" style="font-family:courier; display:flex; flex-wrap:nowrap; flex-direction:column; justify-content:center;">
 			<p style="font-size:4vh; text-align:center; color:darkgrey;">Projects <img class="rounded" style="width:4vh; height:4vh;" src="images/project.png" /></p>
 			<div style="font-size:2vh;">
 				<b>Game Strategies for the GIPF game</b><br>
@@ -134,8 +134,8 @@
 		</div>
 	</div>
 
-	<div class="container" id="Research" style="padding-top:70px;">
-		<div class="jumbotron" style="font-family:courier;">
+	<div class="container-fluid" id="Research" style="padding-top:70px; display:flex; flex-wrap:wrap; flex-direction:row; justify-content:center;">
+		<div class="jumbotron" style="font-family:courier; display:flex; flex-wrap:nowrap; flex-direction:column; justify-content:center;">
 			<p style="font-size:4vh; text-align:center; color:darkgrey;">Research <img class="rounded" style="width:4vh; height:3vh;" src="images/research.png" /></p>
 			<div style="font-size:2vh;">
 				<b>Acceleration of Vector Auto Regression with GPUs</b><br>
@@ -190,7 +190,7 @@
 		});
 	</script>
 
-	<div class="container" id="Hobbies" style="height:100vh; width: 100vw; padding-top:70px;">
+	<div class="container" id="Hobbies" style="height:100vh; width: 100vw; padding-top:70px; display:flex; flex-wrap:nowrap; flex-direction:column; justify-content:center;">
 		<p style="font-size:5vmin; font-family:courier; text-align:center;">When I am free, I usually:</p>
 		<div style="display:flex; flex-wrap:wrap; flex-direction:row; justify-content:center;">
 			<img class="rounded" style="width:30vmin; height:30vmin; padding:1vmin;" src="images/tt.png" />
