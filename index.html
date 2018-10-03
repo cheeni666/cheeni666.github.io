@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 	<link rel="icon" href="images/s.png">
 	<title>Shreenivas Bharadwaj V</title>
 </head>
@@ -39,47 +40,23 @@
 
 	<div class="container" id="About" style="height:100vh; padding-top:70px; display:flex;">
 		<div style="margin:auto;">
-			<p id="about_1" style="font-size:3vmax; font-family:courier; text-align:center;"></p>
-			<p id="about_2" style="font-size:2vmax; font-family:courier; text-align:center; font-style:italic;"></p>
+			<p id="about_1" style="font-size:3vmax; font-family:courier; text-align:center;">HI THERE, I AM SHREENIVAS!</p>
+			<p id="about_2" style="font-size:2vmax; font-family:courier; text-align:center; font-style:italic;">I ❤ TO BUILD.</p>
 			<div class="text-center">
 				<img class="rounded-circle" style="width:10vmax; height:10vmax;" src="images/cheeni.png" />
 			</div>
 		</div>
 	</div>
 
-	<script>
-		function typeStart(txt, id, speed) {
-			function typeWriter() {
-				if (i < txt.length) {
-					document.getElementById(id).innerHTML = document.getElementById(id).innerHTML.slice(0, -1);
-					document.getElementById(id).innerHTML += txt.charAt(i);
-					if (i != txt.length - 1) {
-						if (txt.charAt(i) == ".") document.getElementById(id).innerHTML += "<br>";
-						document.getElementById(id).innerHTML += "|";	
-					}
-					i++;
-					setTimeout(typeWriter, speed);
-				}
-			}
-			var i = 0;
-			typeWriter();
-		}
-
-		$(document).ready(function(){
-			typeStart('HI THERE, I AM SHREENIVAS!', 'about_1', 50);
-			setTimeout('typeStart("I ❤ TO BUILD.", "about_2", 50)', 1500);
-		});
-	</script>
-
 	<div class="container-fluid" id="Summary" style="height:100vh; padding-top:70px; background-image:url('images/stars.gif'); background-size:cover; display:flex; flex-wrap:nowrap; flex-direction:column; justify-content:center;">
 		<p style="font-size:4vh; font-family:courier; text-align:center; color:white; ">Summary</p>
-		<div style="color:white; padding:1vw; font-style:italic;">
-			<p style="font-size:2vh; font-family:courier;">My full name is Shreenivas Bharadwaj Venkataramanan.</p>
-			<p style="font-size:2vh; font-family:courier;">I am a Masters student in the CS department of UC San Diego.</p>
-			<p style="font-size:2vh; font-family:courier;">I finished my undergrad at NIT, Trichy graduating with a BTech degree in CSE.</p>
-			<p style="font-size:2vh; font-family:courier;">I indulge mostly in Machine Learning. Some of my works have occasionally intersected with the fields of Natural Language Processing, Networks and High Performance Computing.</p>
-			<p style="font-size:2vh; font-family:courier;">I also have a good amount of experience in Web development and Android applications development.</p>
-			<p style="font-size:2vh; font-family:courier;">I aspire to be a Software Engineer and a Machine Learning enthusiast who works on solving real world problems bringing forward development universally.</p>
+		<div style="color:white; padding:1vw; font-style:italic; font-size:2vh; font-family:arial; text-align:center;">
+			<p>My full name is Shreenivas Bharadwaj Venkataramanan.</p>
+			<p>I am currently doing my Masters in CS at UC San Diego.<br>Go Tritons!</p>
+			<p>I finished my undergrad at NIT, Trichy graduating with a BTech degree in CSE.</p>
+			<p>I am extremely passionate about Machine Learning. Some of my works have occasionally intersected with the fields of Natural Language Processing, Networks and High Performance Computing.</p>
+			<p>I have a good amount of developing experience. I can create all those cool Websites and Android apps.</p>
+			<p>I love the violin! I literally like any music which has violin in it. I worked on creating violin samples using Deep Learning in one of my projects.</p>
 		</div>
 	</div>
 
@@ -89,10 +66,27 @@
 			<div class="text-center">
 				<img class="rounded" style="width:15vh; height:15vh;" src="images/coding.png" />
 			</div>
-			<p style="font-size:3vh; font-family:courier; text-align:center;"><em>Develop.</em></p>
-			<p style="font-size:2vh; font-family:courier; text-align:center;"><b>Programming Languages and Tools:</b><br><span style="color:red;">C/C++, Python, Java, Matlab</span><br><span style="color:green;">HTML, CSS, JavaScript<br>Bash, SQL, Git</span></p>
-			<p style="font-size:2vh; font-family:courier; text-align:center;"><b>Frameworks:</b><br><span style="color:blue;">AndroidStudio, Tensorflow, Pytorch<br>Jquery, Flask, CUDA/cuBLAS/Thrust</span></p>
-			</div>
+			<p style="font-size:3vh; font-family:courier; text-align:center;"><em>Develop cool stuff.</em></p>
+			<p style="font-size:2vh; font-family:courier; text-align:center;">
+				<b>Programming Languages and Tools:</b><br>
+				<span style="color:blue;">C/C++, </span>
+				<span style="color:green;">Python, </span>
+				<span style="color:blue;">Java, </span>
+				<span style="color:green;">Matlab, </span><br>
+				<span style="color:blue;">HTML, </span>
+				<span style="color:blue;">CSS, </span>
+				<span style="color:green;">JavaScript, </span><br>
+				<span style="color:green;">Bash, </span>
+				<span style="color:blue;">SQL</span><br>
+				<b>Frameworks:</b><br>
+				<span style="color:green;">AndroidStudio, </span>
+				<span style="color:green;">Tensorflow, </span>
+				<span style="color:green;">Pytorch, </span><br>
+				<span style="color:blue;">Jquery, </span>
+				<span style="color:blue;">Flask, </span>
+				<span style="color:green;">CUDA/cuBLAS/Thrust</span>
+			</p>
+			<p style="font-size:2vh; font-family:courier; text-align:center; color:red;">By the way, my favs are in green!</p>
 		</div>
 	</div>
 
@@ -108,56 +102,81 @@
 		</div>
 	</div>
 
-	<div class="container-fluid" id="Projects" style="padding-top:70px; display:flex; flex-wrap:wrap; flex-direction:row; justify-content:center;">
-		<div class="jumbotron" style="font-family:courier; display:flex; flex-wrap:nowrap; flex-direction:column; justify-content:center;">
-			<p style="font-size:4vh; text-align:center; color:darkgrey;">Projects <img class="rounded" style="width:4vh; height:4vh;" src="images/project.png" /></p>
-			<div style="font-size:2vh;">
-				<b>Game Strategies for the GIPF game</b><br>
-				<em>Final year thesis | Jan’18-April’18 | NIT Trichy, India</em><br>
-				Defeated the current champion bot in GIPF. Analyzed various strategies (Monte Carlo Tree Search, Negascout).
-			</div>
-			<div style="font-size:2vh;">
-				<b>Software Development Intern project</b><br>
-				<em>Amazon | May’17-July’17 | Chennai, India</em><br>
-				Designed and deployed an internal tool page service in the Kindle Digital Commerce Platform using Coral framework. Executed Amazon’s development process, codereviews, wrote high coverage unit tests, used Amazon’s build/test/integration tools.
-			</div>
-			<div style="font-size:2vh;">
-				<b>Club projects</b><br>
-				<em>Delta | 2015-18 | NIT Trichy, India</em><br>
-				Developed inventory management site with Flask and MySQL database. Collaborated and created a campus communication application in android (PHP backend). Devised AI for Tic-Tac-Toe, Chess and built game in android for hackathons.
-			</div>
-			<div style="font-size:2vh;">
-				<b>Music Recogniton and Generation</b><br>
-				<em>Vortex Symposium | Jan’17-May’17 | NIT Trichy, India</em><br>
-				Improved accuracy by 10% in the IRMAS dataset. Used LSTM neural networks with Mel Cepstral features. Music created by generating Spectrograms using Deep Convolutional GAN.
-			</div>
+	<div class="container-fluid" id="Projects" style="padding-top:70px;">
+		<div class="jumbotron" style="font-family:arial; text-align:center;">
+			<p style="font-size:4vh; text-align:center; color:darkgrey; font-family:courier;">Projects<a href="https://www.github.com/shreenibhar"><i class="fab fa-github-alt" style="margin:2vmin;" data-toggle="tooltip" data-placement="bottom" title="Github"></i></a></p>
+			<table class="table" style="font-size:2vh;">
+				<tbody>
+					<tr>
+						<td>
+							<b>Game Strategies for the GIPF game, NIT Trichy</b><br>
+							We defeated the current champion bot in GIPF and analyzed various strategies (Monte Carlo Tree Search, Negascout).
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b>Software Development Intern, Amazon</b><br>
+							I interned in the Earth's most customer centric company.<br>
+							I designed and deployed an internal tool page service in the Kindle Digital Commerce Platform team using Amazon's framework.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b>Dev Projects, Delta, NIT Trichy</b><br>
+							Developed inventory management site with Flask and MySQL database.<br>
+							Worked with some cool people and created a campus communication application in android (PHP backend).<br>
+							Devised AI for Tic-Tac-Toe, Chess and built game in android for hackathons.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b>Music Recogniton and Generation</b><br>
+							Won the Second best student paper award for this project.<br>
+							Initially, I worked on just violin samples and later went on to generalize it to all instruments.<br>
+							I created Music by generating Spectrograms using Deep Convolutional GAN.
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 
-	<div class="container-fluid" id="Research" style="padding-top:70px; display:flex; flex-wrap:wrap; flex-direction:row; justify-content:center;">
-		<div class="jumbotron" style="font-family:courier; display:flex; flex-wrap:nowrap; flex-direction:column; justify-content:center;">
-			<p style="font-size:4vh; text-align:center; color:darkgrey;">Research <img class="rounded" style="width:4vh; height:3vh;" src="images/research.png" /></p>
-			<div style="font-size:2vh;">
-				<b>Acceleration of Vector Auto Regression with GPUs</b><br>
-				<em>Research Intern | July’17-Dec’17 | Indian Institute of Technology, Delhi</em><br>
-				Achieved 650x speedup over the regular CPU code. Computed tight bound solutions for Lasso regression models.
-			</div>
-			<div style="font-size:2vh;">
-				<b>MAC Layer Optimization, Dynamic Learning</b><br>
-				<em>Course Research | July'16-Dec'16 | National Institute of Technology, Trichy</em><br>
-				Increased throughput by 3% (10Kbps)approx. at max traffic (80 stations). Optimized the MAC 802.11 wireless network Contention Window mechanism. Published in IJDIWC journal.
-			</div>
-			<div style="font-size:2vh;">
-				<b>Named Entity Recognition</b><br>
-				<em>Research Intern | May’16-July’16 | IIIT, Hyderabad</em><br>
-				Improved accuracy by 15% in the Named Entity Recognition task for Hindi. Achieved 90% accuracy in the English task. Published in the proceedings of ICON-2016 conference indexed in ACL.
-			</div>
+	<div class="container-fluid" id="Research" style="padding-top:70px;">
+		<div class="jumbotron" style="font-family:arial; text-align:center;">
+			<p style="font-size:4vh; text-align:center; color:darkgrey; font-family:courier;">Research<a href="https://www.github.com/shreenibhar"><i class="fab fa-github" style="margin:2vmin;" data-toggle="tooltip" data-placement="bottom" title="Github"></i></a></p>
+			<table class="table" style="font-size:2vh;">
+				<tbody>
+					<tr>
+						<td>
+							<b>Acceleration of Vector Auto Regression with GPUs, IIT Delhi</b><br>
+							GPUs are crazy!<br>
+							I achieved 650x speedup over the regular CPU code.<br>
+							Computed tight bound solutions for Lasso regression models.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b>MAC Layer Optimization, Dynamic Learning, NIT Trichy</b><br>
+							We increased throughput by 3% (10Kbps)approx. at max traffic (80 stations) and optimized the MAC 802.11 wireless network Contention Window mechanism.<br>
+							We used Neuton's regression to solve complex equations. Our work got published in the IJDIWC journal.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b>Named Entity Recognition, IIIT Hyderabad</b><br>
+							Tensorflow is great!<br>
+							We improved the accuracy by 15% in the Named Entity Recognition task for Hindi and chieved 90% accuracy in the English task.<br>
+							We used LSTM networks and Word Embeddings. Published in the proceedings of ICON-2016 conference indexed in ACL.
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 
-	<div class="container" id="Publications" style="height:100vh; width: 100vw; padding-top:70px;">
-		<p style="font-size:4vh; font-family:courier; text-align:center;">Publications <img class="rounded" style="width:4vh; height:4vh;" src="images/paper.png" /></p>
-		<table class="table" style="font-size:2vh;">
+	<div class="container-fluid" id="Publications" style="height:100vh; width: 100vw; padding-top:70px;">
+		<p style="font-size:4vh; font-family:courier; text-align:center;">Publications<a href="https://scholar.google.com/citations?user=X8hMQFEAAAAJ&hl=en"><i class="ai ai-google-scholar" style="margin:2vmin;" data-toggle="tooltip" data-placement="bottom" title="Google Scholar"></i></a></p>
+		<table class="table" style="font-size:2vh; font-family:arial;">
 			<tbody>
 				<tr>
 					<th scope="row">1</th>
@@ -171,10 +190,9 @@
 		</table>
 	</div>
 
-	<div class="container" id="Resume" style="height:100vh; width: 100vw; padding-top:70px; background-color:#404040; display:flex;">
+	<div class="container-fluid" id="Resume" style="height:100vh; width: 100vw; padding-top:70px; background-color:#404040; display:flex;">
 		<div style="margin:auto;">
-			<p style="font-size:3vmax; font-family:courier; text-align:center; color:white;">Are you interested?</p>
-			<p style="font-size:3vmax; font-family:courier; text-align:center; color:white;">Here is my resume</p>
+			<p style="font-size:3vmax; font-family:courier; text-align:center; color:white;">And, here is my resumé</p>
 			<div class="text-center">
 				<button type="button" class="btn btn-outline-warning btn-lg" style="width:20vmax; height:8vmax;"><p style="font-size:3vmax; font-family:courier; text-align:center;">Resume <img class="rounded" style="width:3vmax; height:3vmax;" src="images/resume.png" /></p></button>
 			</div>
@@ -190,7 +208,7 @@
 		});
 	</script>
 
-	<div class="container" id="Hobbies" style="height:100vh; width: 100vw; padding-top:70px; display:flex; flex-wrap:nowrap; flex-direction:column; justify-content:center;">
+	<div class="container-fluid" id="Hobbies" style="height:100vh; width: 100vw; padding-top:70px; display:flex; flex-wrap:nowrap; flex-direction:column; justify-content:center;">
 		<p style="font-size:5vmin; font-family:courier; text-align:center;">When I am free, I usually:</p>
 		<div style="display:flex; flex-wrap:wrap; flex-direction:row; justify-content:center;">
 			<img class="rounded" style="width:30vmin; height:30vmin; padding:1vmin;" src="images/tt.png" />
@@ -204,7 +222,7 @@
 
 	<footer id="Contact" class="page-footer" style="background-color:black;">
 		<div class="container-fluid text-center">
-			<p style="font-size:5vmin; font-family:courier; color:grey;">Connect with Me</p>
+			<p style="font-size:5vmin; font-family:courier; color:grey;">Feel free to shoot me a message!</p>
 			<div style="color:white; font-size:5vmin;">
 				<a href="mailto:sbvenkat@ucsd.edu">
 					<i class="fas fa-envelope fa-2x" style="margin:2vmin;" data-toggle="tooltip" data-placement="bottom" title="Email"></i>
@@ -215,18 +233,18 @@
 				<a href="https://www.facebook.com/ShreenivasBharadwajV">
 					<i class="fab fa-facebook-f fa-2x" style="margin:2vmin;" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i>
 				</a>
-				<a href="https://github.com/shreenibhar">
-					<i class="fab fa-github fa-2x" style="margin:2vmin;" data-toggle="tooltip" data-placement="bottom" title="Github"></i>
+				<a href="https://twitter.com/shreenibhar">
+					<i class="fab fa-twitter fa-2x" style="margin:2vmin;" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i>
 				</a>
-				<a href="https://scholar.google.com/citations?user=X8hMQFEAAAAJ&hl=en">
-					<i class="fab fa-google fa-2x" style="margin:2vmin;" data-toggle="tooltip" data-placement="bottom" title="Google Scholar"></i>
+				<a href="https://plus.google.com/u/0/108483037864740534736">
+					<i class="fab fa-google-plus-g fa-2x" style="margin:2vmin;" data-toggle="tooltip" data-placement="bottom" title="Google+"></i>
 				</a>
 			</div>
 		</div>
-		<div class="footer-copyright text-center">
+		<div class="footer-copyright text-center" style="color:darkgrey; font-size:3vmin;">
 			2018, Shreenivas Bharadwaj V
 		</div>
-		<div class="footer-copyright text-center">
+		<div class="footer-copyright text-center" style="color:darkgrey; font-size:3vmin;">
 			Made with HTML, CSS, Bootsrap, Javascript, Jquery, Font Awesome and lots of ❤
 		</div>
   </footer>
