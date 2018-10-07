@@ -48,7 +48,7 @@
 		</div>
 	</div>
 
-	<div class="container-fluid" id="Summary" style="height:100vh; padding-top:70px; background-image:url('images/stars.gif'); background-size:cover; display:flex; flex-wrap:nowrap; flex-direction:column; justify-content:center;">
+	<div class="container" id="Summary" style="height:100vh; padding-top:70px; background-image:url('images/stars.gif'); background-size:cover; display:flex; flex-wrap:nowrap; flex-direction:column; justify-content:center;">
 		<p style="font-size:4vh; font-family:courier; text-align:center; color:white; ">Summary</p>
 		<div style="color:white; padding:1vw; font-style:italic; font-size:2vh; font-family:arial; text-align:center;">
 			<p>My full name is Shreenivas Bharadwaj Venkataramanan.</p>
@@ -60,7 +60,7 @@
 		</div>
 	</div>
 
-	<div class="container-fluid" id="Skills" style="height:100vh; padding-top:70px; display:flex; background-color:lightgrey;">
+	<div class="container" id="Skills" style="height:100vh; padding-top:70px; display:flex; background-color:lightgrey;">
 		<div style="margin:auto;">
 			<p style="font-size:4vh; font-family:courier; text-align:center;">What I do</p>
 			<div class="text-center">
@@ -90,7 +90,7 @@
 		</div>
 	</div>
 
-	<div class="container-fluid" id="Experience" style="height:100vh; padding-top:70px; display:flex; flex-wrap:nowrap; flex-direction:column; justify-content:center;">
+	<div class="container" id="Experience" style="height:100vh; padding-top:70px; display:flex; flex-wrap:nowrap; flex-direction:column; justify-content:center;">
 		<p style="font-size:5vmin; font-family:courier; text-align:center;">Places I have worked or interned at:</p>
 		<div style="display:flex; flex-wrap:wrap; flex-direction:row; justify-content:center;">
 			<img class="rounded" style="width:30vmin; height:30vmin; padding:1vmin;" src="images/amazon.png" />
@@ -102,27 +102,29 @@
 		</div>
 	</div>
 
-	<div class="container-fluid" id="Projects" style="padding-top:70px;">
+	<div class="container" id="Projects" style="padding-top:70px;">
 		<div class="jumbotron" style="font-family:arial; text-align:center;">
 			<p style="font-size:4vh; text-align:center; color:darkgrey; font-family:courier;">Projects<a href="https://www.github.com/shreenibhar" style="margin:2vmin;"><i class="fab fa-github-alt" data-toggle="tooltip" data-placement="bottom" title="Github"></i><span style="font-size:1vh;">Github</span></a></p>
 			<table class="table" style="font-size:2vh; text-align:justify;">
 				<tbody>
 					<tr>
 						<td>
-							<b>Game Strategies for the GIPF game, NIT Trichy</b><br>
-							We defeated the current champion bot in GIPF and analyzed various strategies (Monte Carlo Tree Search, Negascout).
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<b>Software Development Intern, Amazon</b><br>
+							<b><a href="https://www.aboutamazon.com/">Software Development Intern, Amazon</a></b><br>
 							I interned in the Earth's most customer centric company.<br>
 							I designed and deployed an internal tool page service in the Kindle Digital Commerce Platform team using Amazon's framework.
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<b>Dev Projects, Delta, NIT Trichy</b><br>
+							<b><a href="https://github.com/shreenibhar/InstrumentRecognition">Music Recogniton and Generation</a></b><br>
+							Won the Second best student paper award for this project.<br>
+							Initially, I worked on just violin samples and later went on to generalize it to all instruments.<br>
+							I created Music by generating Spectrograms using Deep Convolutional GAN.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b><a href="https://delta.nitt.edu/">Dev Projects, Delta, NIT Trichy</a></b><br>
 							Developed inventory management site with Flask and MySQL database.<br>
 							Worked with some cool people and created a campus communication application in android (PHP backend).<br>
 							Devised AI for Tic-Tac-Toe, Chess and built game in android for hackathons.
@@ -130,10 +132,8 @@
 					</tr>
 					<tr>
 						<td>
-							<b>Music Recogniton and Generation</b><br>
-							Won the Second best student paper award for this project.<br>
-							Initially, I worked on just violin samples and later went on to generalize it to all instruments.<br>
-							I created Music by generating Spectrograms using Deep Convolutional GAN.
+							<b><a href="https://github.com/SooryaN/gipf-ai">Game Strategies for the GIPF game, NIT Trichy</a></b><br>
+							We defeated the current champion bot in GIPF and analyzed various strategies (Monte Carlo Tree Search, Negascout).
 						</td>
 					</tr>
 				</tbody>
@@ -141,14 +141,22 @@
 		</div>
 	</div>
 
-	<div class="container-fluid" id="Research" style="padding-top:70px;">
+	<div class="container" id="Research" style="padding-top:70px;">
 		<div class="jumbotron" style="font-family:arial; text-align:center;">
 			<p style="font-size:4vh; text-align:center; color:darkgrey; font-family:courier;">Research<a href="https://www.github.com/shreenibhar" style="margin:2vmin;"><i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" title="Github"></i><span style="font-size:1vh;">Github</span></a></p>
 			<table class="table" style="font-size:2vh; text-align:justify;">
 				<tbody>
 					<tr>
 						<td>
-							<b>Acceleration of Vector Auto Regression with GPUs, IIT Delhi</b><br>
+							<b><a href="https://github.com/monikkinom/ner-lstm">Named Entity Recognition, IIIT Hyderabad</a></b><br>
+							Tensorflow is great!<br>
+							We improved the accuracy by 15% in the Named Entity Recognition task for Hindi and chieved 90% accuracy in the English task.<br>
+							We used LSTM networks and Word Embeddings. Published in the proceedings of ICON-2016 conference indexed in ACL.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b><a href="https://github.com/shreenibhar/larsenMRI">Acceleration of Vector Auto Regression with GPUs, IIT Delhi</a></b><br>
 							GPUs are crazy!<br>
 							I achieved 650x speedup over the regular CPU code.<br>
 							Computed tight bound solutions for Lasso regression models.
@@ -156,17 +164,9 @@
 					</tr>
 					<tr>
 						<td>
-							<b>MAC Layer Optimization, Dynamic Learning, NIT Trichy</b><br>
+							<b><a href="http://sdiwc.net/digital-library/web-admin/upload-pdf/00002025.pdf">MAC Layer Optimization, Dynamic Learning, NIT Trichy</a></b><br>
 							We increased throughput by 3% (10Kbps)approx. at max traffic (80 stations) and optimized the MAC 802.11 wireless network Contention Window mechanism.<br>
 							We used Neuton's regression to solve complex equations. Our work got published in the IJDIWC journal.
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<b>Named Entity Recognition, IIIT Hyderabad</b><br>
-							Tensorflow is great!<br>
-							We improved the accuracy by 15% in the Named Entity Recognition task for Hindi and chieved 90% accuracy in the English task.<br>
-							We used LSTM networks and Word Embeddings. Published in the proceedings of ICON-2016 conference indexed in ACL.
 						</td>
 					</tr>
 				</tbody>
@@ -174,23 +174,23 @@
 		</div>
 	</div>
 
-	<div class="container-fluid" id="Publications" style="height:100vh; padding-top:70px;">
+	<div class="container" id="Publications" style="height:100vh; padding-top:70px;">
 		<p style="font-size:4vh; font-family:courier; text-align:center;">Publications<a href="https://scholar.google.com/citations?user=X8hMQFEAAAAJ&hl=en" style="margin:2vmin;"><i class="ai ai-google-scholar" data-toggle="tooltip" data-placement="bottom" title="Google Scholar"></i><span style="font-size:1vh;">GScholar</span></a></p>
 		<table class="table" style="font-size:2vh; font-family:arial;">
 			<tbody>
 				<tr>
 					<th scope="row">1</th>
-					<td>Balasubramanian, N., Venkataramanan, S.B. and Aathma, A., 2017. Dynamic Optimization of IEEE 802.11 DCF based on Active Stations and Collision Probability. International Journal of Digital Information and Wireless Communications, 7(2), pp.66-75.</td>
+					<td><a href="http://sdiwc.net/digital-library/web-admin/upload-pdf/00002025.pdf">Balasubramanian, N., Venkataramanan, S.B. and Aathma, A., 2017. Dynamic Optimization of IEEE 802.11 DCF based on Active Stations and Collision Probability. International Journal of Digital Information and Wireless Communications, 7(2), pp.66-75.</a></td>
 				</tr>
 				<tr>
 					<th scope="row">2</th>
-					<td>Athavale, V., Bharadwaj, S., Pamecha, M., Prabhu, A. and Shrivastava, M., 2016. Towards deep learning in hindi ner: An approach to tackle the labelled data scarcity. arXiv preprint arXiv:1610.09756.</td>
+					<td><a href="https://arxiv.org/pdf/1610.09756.pdf">Athavale, V., Bharadwaj, S., Pamecha, M., Prabhu, A. and Shrivastava, M., 2016. Towards deep learning in hindi ner: An approach to tackle the labelled data scarcity. arXiv preprint arXiv:1610.09756.</a></td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 
-	<div class="container-fluid" id="Resume" style="height:100vh; padding-top:70px; background-color:#404040; display:flex;">
+	<div class="container" id="Resume" style="height:100vh; padding-top:70px; background-color:#404040; display:flex;">
 		<div style="margin:auto;">
 			<p style="font-size:3vmax; font-family:courier; text-align:center; color:white;">And, here is my resumé</p>
 			<div class="text-center">
@@ -208,7 +208,7 @@
 		});
 	</script>
 
-	<div class="container-fluid" id="Hobbies" style="height:100vh; padding-top:70px; display:flex; flex-wrap:nowrap; flex-direction:column; justify-content:center;">
+	<div class="container" id="Hobbies" style="height:100vh; padding-top:70px; display:flex; flex-wrap:nowrap; flex-direction:column; justify-content:center;">
 		<p style="font-size:5vmin; font-family:courier; text-align:center;">When I am free, I usually:</p>
 		<div style="display:flex; flex-wrap:wrap; flex-direction:row; justify-content:center;">
 			<img class="rounded" style="width:30vmin; height:30vmin; padding:1vmin;" src="images/tt.png" />
@@ -221,7 +221,7 @@
 	</div>
 
 	<footer id="Contact" class="page-footer" style="background-color:black;">
-		<div class="container-fluid text-center">
+		<div class="container text-center">
 			<p style="font-size:5vmin; font-family:courier; color:grey;">Feel free to shoot me a message!</p>
 			<div style="color:white; font-size:5vmin;">
 				<a href="mailto:sbvenkat@ucsd.edu">
