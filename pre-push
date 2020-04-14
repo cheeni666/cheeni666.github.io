@@ -1,3 +1,0 @@
-#!/bin/sh
-
-ssh sbvenkat@login.eng.ucsd.edu "echo 'cd public_html; git fetch --all; git reset --hard origin/master' | at now + 1 min;";
